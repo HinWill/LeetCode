@@ -1,7 +1,7 @@
 package array;
 
 /*
-                                            189. Rotate Array
+189. Rotate Array
 
 Rotate an array of n elements to the right by k steps.
 For example, with n = 7 and k = 3, the array [1,2,3,4,5,6,7] is rotated to [5,6,7,1,2,3,4].
@@ -15,7 +15,7 @@ For example, with n = 7 and k = 3, the array [1,2,3,4,5,6,7] is rotated to [5,6,
  */
 
 
-public class RotateArray {
+public class RotateArray189 {
 
     public void rotate(int[] nums, int k) {
 
@@ -41,7 +41,7 @@ public class RotateArray {
     public static void main(String[] args){
         int[] nums = {1,2,3,4,5,6,7};
 
-        new RotateArray().rotate(nums,3);
+        new RotateArray189().rotate(nums,3);
 
         for (int num : nums) {
             System.out.println("num = " + num);

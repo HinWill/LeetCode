@@ -20,7 +20,7 @@ Given an array containing n distinct numbers taken from 0, 1, 2, ..., n, find th
 
  */
 
-public class MissingNumber {
+public class MissingNumber268 {
     public int missingNumber(int[] nums) {
         int n = nums.length;
         int sum = n * (n + 1) / 2;
@@ -32,6 +32,6 @@ public class MissingNumber {
 
     public static void main(String[] args) {
         int[] nums = {9,6,4,2,3,5,7,0,1};
-        System.out.println(new MissingNumber().missingNumber(nums));
+        System.out.println(new MissingNumber268().missingNumber(nums));
     }
 }

@@ -4,11 +4,15 @@ package array;
 /*
 
 
-                                665. Non-decreasing Array
+665. Non-decreasing Array
 
 Given an array with n integers, your task is to check if it could become non-decreasing by modifying at most 1 element.
 
 We define an array is non-decreasing if array[i] <= array[i + 1] holds for every i (1 <= i < n).
+
+
+题目描述：给定一个具有N个整型元素的数组，检查该数组是否能够通过最多改变一个元素的值，从而使得其本身变为单调非减数组，我们定义单调非减是指对于数组中的每一个有效下标i,都有 a[i] <= a[i+1]。
+
 
 所以这道题难在当遇到nums[i] > nums[i+1]的时候，是把nums[i]降为nums[i+1] 还是将nums[i+1]升为nums[i].
 
@@ -16,7 +20,7 @@ We define an array is non-decreasing if array[i] <= array[i + 1] holds for every
 
  */
 
-public class NondecreasingArray {
+public class NondecreasingArray665 {
     public boolean checkPossibility(int[] nums) {
 
         int count = 0;
@@ -34,7 +38,7 @@ public class NondecreasingArray {
     public static void main(String[] args) {
 
         int[] nums = {3,4,2,3};
-        System.out.println(new NondecreasingArray().checkPossibility(nums));
+        System.out.println(new NondecreasingArray665().checkPossibility(nums));
 
     }
 

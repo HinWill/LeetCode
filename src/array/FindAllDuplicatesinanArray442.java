@@ -11,7 +11,11 @@ Find all the elements that appear twice in this array.
 
 Could you do it without extra space and in O(n) runtime?
 
-看似一道很简单的题  但是题目中要求的限制了空间和时间复杂度，所以双循环肯定是不行的，如果可以的话可以使用java8中的Stream 来解决问题
+看似一道很简单的题
+
+给定一个整数数组,1≤[我]≤n(n =数组的大小),和其他一些元素出现两次出现一次，找到所有两次出现在这个数组的元素。 　　 　
+
+但是题目中要求的限制了空间和时间复杂度，所以双循环肯定是不行的，如果可以的话可以使用java8中的Stream 来解决问题
 这里中还有一个很重要的条件，1 ≤ a[i] ≤ n (n = size of array)，数组中的元素的值都是大于1小于数组的长度的，所以最优解中使用类似标记的方法
 循环一遍数组，将每个元素值对应的数组元素取相反数，然后在之后的循环中进行判断，如果是相同元素值的话，那么所对应的数组元素应该是小于0的
 
@@ -27,7 +31,7 @@ Could you do it without extra space and in O(n) runtime?
 */
 
 import java.util.*;
-public class FindAllDuplicatesinanArray {
+public class FindAllDuplicatesinanArray442 {
     public List<Integer> findDuplicates(int[] nums) {
         List<Integer> res = new ArrayList<>();
         for (int i = 0; i < nums.length; ++i) {

@@ -8,7 +8,9 @@ Given an array nums, write a function to move all 0's to the end of it while mai
 
 For example, given nums = [0, 1, 0, 3, 12], after calling your function, nums should be [1, 3, 12, 0, 0].
 
- 这道题我上来的想法是第一次遍历，把不等于0的元素保存到另外一个数组中。
+题目描述：给你一个数组，将数组中不为0的元素移动到数组的前面，并保持相对位置
+
+这道题我上来的想法是第一次遍历，把不等于0的元素保存到另外一个数组中。
 第二次遍历，先把已保存不等于0的元素依次赋值到nums，然后把nums剩下的元素空位都赋值0
 
 当然这种方法的时间复杂度为O(2n)
@@ -22,7 +24,7 @@ For example, given nums = [0, 1, 0, 3, 12], after calling your function, nums sh
 
 
 
-public class MoveZeroes {
+public class MoveZeroes283 {
 
     public void moveZeroes(int[] nums) {
 
@@ -55,7 +57,7 @@ public class MoveZeroes {
     public static void main(String[] args) {
         int[] nums = {0, 1, 0, 3, 12};
 
-        new MoveZeroes().moveZeroess(nums);
+        new MoveZeroes283().moveZeroess(nums);
 
         for (int i = 0; i < nums.length; i++) {
             System.out.println("nums = " + nums[i]);
