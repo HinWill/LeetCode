@@ -20,7 +20,7 @@ Substrings that occur multiple times are counted the number of times they occur.
 Your runtime beats 25.49 % of java submissions.
 
  */
-public class CountBinarySubstrings {
+public class CountBinarySubstrings696 {
 
     public int countBinarySubstrings(String s) {
         int prevRunLength = 0, curRunLength = 1, res = 0;
@@ -37,7 +37,7 @@ public class CountBinarySubstrings {
 
 
     public static void main(String[] args) {
-        int num = new CountBinarySubstrings().countBinarySubstrings("0101");
+        int num = new CountBinarySubstrings696().countBinarySubstrings("0101");
     }
 
 }

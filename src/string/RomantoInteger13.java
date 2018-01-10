@@ -3,6 +3,17 @@ package string;
 
 
 /*
+
+Given a roman numeral, convert it to an integer.
+
+Input is guaranteed to be within the range from 1 to 3999.
+
+
+题目描述：将一个罗马数字转换为阿拉伯数字
+
+
+这个题非常的扯，如果你不会罗马数字根本就不会做，而且做了也没有多大的意义
+
 首先，学习一下罗马数字，参考罗马数字
 
 罗马数字是最古老的数字表示方式，比阿拉伯数组早2000多年，起源于罗马
@@ -24,7 +35,7 @@ package string;
  */
 
 
-public class RomantoInteger {
+public class RomantoInteger13 {
     public int romanToInt(String s){
 
         int[] num = new int[s.length()];
@@ -68,7 +79,7 @@ public class RomantoInteger {
 
 
     public static void main(String[] args) {
-        int n = new RomantoInteger().romanToInt("3999");
+        int n = new RomantoInteger13().romanToInt("3999");
 
         System.out.println("n = " + n);
     }

@@ -9,7 +9,14 @@ import static java.lang.Math.abs;
 
 /*
 
-给了我们一个数组，让我们求最短的无序连续子数组，根据题目中的例子也不难分析出来是让我们找出数组中的无序的部分。
+Given an integer array, you need to find one continuous subarray that if you only sort this subarray in ascending order, then the whole array will be sorted in ascending order, too.
+
+You need to find the shortest such subarray and output its length.
+
+题目描述：给了我们一个数组，让我们求最短的无序连续子数组，根据题目中的例子也不难分析出来是让我们找出数组中的无序的部分。
+
+
+思路：
 这道题非常的好，想了半天  最后又反复读题看到升序才有了思路，先将原数组全部升序后，
 找出第一个不同于排序后的坐标和找出最后一个不同的坐标，相减就是其中最短子数组的长度了。
 但是我的方法有一种特殊的情况，就是数组本身就是升序的，所以最后要判断一下。

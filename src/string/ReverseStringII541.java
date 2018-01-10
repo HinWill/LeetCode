@@ -7,7 +7,7 @@ characters counting from the start of the string. If there are less than k chara
 reverse all of them. If there are less than 2k but greater than or equal to k characters,
  then reverse the first k characters and left the other as original.
 
-题目不难，需要看清题意。输入一个字符串s和一个整数k，使得前k个字符串翻转，后k个字符串保持不变，如此不断处理整个字符串，直到达到字符串尾部。
+题目描述：输入一个字符串s和一个整数k，使得前k个字符串翻转，后k个字符串保持不变，如此不断处理整个字符串，直到达到字符串尾部。
 
 
 实现方法：
@@ -18,7 +18,7 @@ reverse all of them. If there are less than 2k but greater than or equal to k ch
 我的代码多考虑了剩余字符串长度的判断
  */
 
-public class ReverseStringII {
+public class ReverseStringII541 {
     public String reverseStr(String s, int k) {
 
         char[] arr = s.toCharArray();
@@ -44,7 +44,7 @@ public class ReverseStringII {
     }
     public static void main(String[] args) {
         String a = "abc";
-        a = new ReverseStringII().reverseStr(a ,3);
+        a = new ReverseStringII541().reverseStr(a ,3);
         System.out.println("a = " + a);
     }
 }
