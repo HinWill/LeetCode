@@ -47,7 +47,8 @@ public class ShortestUnsortedContinuousSubarray581 {
 
 
         //My Personal Idea
-       /*int[] n = nums.clone();
+        /*
+       int[] n = nums.clone();
        Arrays.sort(n);
        int len = nums.length;
        int start = 0,end = 0;
@@ -63,7 +64,8 @@ public class ShortestUnsortedContinuousSubarray581 {
             return 0;
         }else{
             return end - start +1;
-        }*/
+        }
+        */
     }
 
 
