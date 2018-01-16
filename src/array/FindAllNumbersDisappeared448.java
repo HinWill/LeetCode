@@ -1,7 +1,6 @@
 package array;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -27,7 +26,7 @@ Example:
 例如：4,3,2,7,8,2,3,1
 标记：-4，-3，-2，-7，-8,2,3，-1
 
-其中重复的是2和3 那么它们所占用的是5和6的位置，所以将下标+1就得到缺失的元素
+其中重复的是2和3 那么它们所占用的是5和6的位置，所以将下标+1就得到缺失的元素的值
 
 
 
