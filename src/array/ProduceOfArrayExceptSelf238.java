@@ -19,7 +19,7 @@ Could you solve it with constant space complexity? (Note: The output array does 
         {       1，     n1,   n1*n2,   n1*n2*n3}  -> a1
        *{n2*n3*n4,   n3*n4,      n4,   1}         -> a2
 
-       但是这里只需要创建一个数组就可以了，使用一个变量存储数组a2的值就可以了
+       但是这里只需要创建一个数组，使用一个变量存储数组a2的值就可以了
 
  */
 
